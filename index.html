@@ -17,65 +17,91 @@
 
     <!--navigation-->
 
-    <nav>
-        <div class="navigation-container">
-            <div class="logo">
-                <span>Portfolio</span>
-            </div>
-            <div class="links">
-                <div class="link"><a href="">HOME</a></div>
-                <div class="link"><a href="">ABOUT ME</a></div>
-                <div class="link"><a href="">HOBBIES</a></div>
-                <div class="link"><a href="">EDUCATION</a></div>
-                <i class="fa-solid fa-bars"></i>
-            </div>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Hobbies</a></li>
+            <li><a href="#contact">Education</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
         </div>
-
-        <div class="dropdown">
-            <div class="links">
-                <div class="link"><a href="">HOME</a></div>
-                <div class="link"><a href="">ABOUT ME</a></div>
-                <div class="link"><a href="">HOBBIES</a></div>
-                <div class="link"><a href="">EDUCATION</a></div>
-                <i class="fa-solid fa-x"></i>
-            </div>
-        </div>
-        
     </nav>
 
-    <section>
-        <div class="main-container">
-            <div class="profile">
-                <img src="assets/port.jpg" alt="profile picture">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left">
-                    Hi! Im Pascual Bernard T. Benauro
-                </h1>
-                <div class="typewriter">
-                    I love to 
-                    <span class="typewriter-text"></span>
-                    <label for=""></label>
-                </div>
-                <p></p>
-                <div class="social-links">
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
+    <section class="hero">
+        <img src="assets/port.jpg" alt="Your Image">
+        <div>
+            <div class="hero-text">Hi! My name is Pascual Bernard Benauro<br>And I like</div>
+            <div class="typewriter" id="typewriter"></div>
+            <div class="github"><i class="fa-brands fa-square-github"></i></div>
         </div>
     </section>
 
-
-    <div class="about-me" id="about-me">
-        <div class="content">
-            <div class="title"><span>About me</span></div>
-            <div class="about-details">
-                <div class="left">
-                    <img src="assets/port.jpg" alt="">
-                </div>
-            </div>
+    <section id="about-me">
+        <h2>About Me</h2>
+        
+        
+        <div class="details">
+          <div class="detail">
+            <h3>Location<i class="fa-solid fa-location-dot"></i></h3>
+            <p>I am from Bangued, Abra</p>
+          </div>
+          <div class="detail">
+            <h3>Hobbies<i class="fa-solid fa-gamepad"></i></h3>
+            <p>I enjoy sleeping. In my free time, I love to sleep.</p>
+          </div>
+          <div class="detail">
+            <h3>Motto<i class="fa-solid fa-pen"></i></h3>
+            <p>"Do what you love and you’ll never work a day in your life—because they probably won’t hire you."</p>
+          </div>
         </div>
-    </div>
+      
+        <div class="about-images">
+          <img src="assets/bangued.jpg" alt="Hobby or Skill 1">
+          <img src="assets/dog.jpg" alt="Hobby or Skill 2">
+        </div>
+      </section>
+      
+      <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <p>These are some of the things I love to do in my free time:</p>
+        
+        <div class="hobby-cards">
+          <div class="hobby-card">
+            <div class="hobby-icon">
+              <img src="assets/vec.png" alt="Designing">
+            </div>
+            <div class="hobby-info">
+              <h3>Designing</h3>
+              <p>"Design is just like life—full of revisions, bad choices, and clients who don’t know what they want until it’s too late."</p>
+            </div>
+          </div>
+          
+          <div class="hobby-card">
+            <div class="hobby-icon">
+              <img src="assets/ds3.png" alt="Gaming">
+            </div>
+            <div class="hobby-info">
+              <h3>Gaming</h3>
+              <p>"Gaming is not just fun—Gaming prepared me for life—respawns are limited, loot is scarce, and the final boss is just adulthood."</p>
+            </div>
+          </div>
+          
+          <div class="hobby-card">
+            <div class="hobby-icon">
+              <img src="assets/sleep.jpg" alt="Sleeping">
+            </div>
+            <div class="hobby-info">
+              <h3>Sleeping</h3>
+              <p>A good sleep is essential! Sleeping is just a free trial of death with ads called nightmares."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 
 
     <script src="https://kit.fontawesome.com/77d4dcdf26.js" crossorigin="anonymous"></script>
